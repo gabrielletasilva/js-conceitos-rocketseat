@@ -1,0 +1,51 @@
+
+<script>
+
+{
+    let x = 0
+    console.log(x)
+}  
+
+</script>
+
+## var
+
+// var é elevada para cima (hoisting) - ela é global e tambem local 
+// var é global e poderá funcionar fora de um eccopo
+
+<script>
+
+    console.log('>Existe x antes do bloco?', x)
+
+    {
+        var x = 0
+    }
+
+
+// É o mesmo que:
+
+
+    var x
+
+    console.log('>Existe x antes do bloco?', x)
+
+    {
+        x = 0
+    }
+</script>
+
+## const e let
+<script>
+
+    // const e let são locais e só funcionam no escopo onde foi criada
+
+    let y = 1;
+
+    {
+        let y = 0
+        console.log('> Existe y depois do bloco?', y)
+    }
+
+    console.log('>Existe y depois de bloco?', y)
+
+</script>
